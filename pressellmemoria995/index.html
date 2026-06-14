@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bill Gates-Funded Stanford Discovery: "Alzheimer's Reversal Ritual" Restores Memory | CBS Reports</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cbs-blue: #1a3a5c;
+    --cbs-blue-deep: #0e2a47;
+    --cbs-gold: #d4a843;
+    --cbs-red: #cc2936;
+    --text-primary: #1b1b1b;
+    --text-body: #2d2d2d;
+    --text-caption: #6b6b6b;
+    --bg: #ffffff;
+    --bg-light: #f5f5f3;
+    --border: #dcdad5;
+    --cta-green: #1a8f4a;
+    --cta-green-hover: #15793e;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Libre Franklin', 'Helvetica Neue', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ═══════ TOP NAV BAR — CBS STYLE ═══════ */
+  .nav-bar {
+    background: var(--cbs-blue-deep);
+    padding: 0 20px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid var(--cbs-gold);
+  }
+  .nav-inner {
+    max-width: 1080px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+  }
+  .cbs-eye {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cbs-eye svg { width: 36px; height: 36px; }
+  .nav-brand {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: -0.3px;
+    line-height: 1;
+  }
+  .nav-brand span {
+    display: block;
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: var(--cbs-gold);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+  .nav-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+  }
+  .nav-links a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: #fff; }
+
+  /* ═══════ BREAKING STRIP ═══════ */
+  .breaking-strip {
+    background: var(--cbs-red);
+    color: #fff;
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 7px 16px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .breaking-strip .live-dot {
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    border-radius: 50%;
+    animation: pulse-dot 1.2s ease-in-out infinite;
+  }
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.75); }
+  }
+
+  /* ═══════ 60 MINUTES BRANDING ═══════ */
+  .sixty-bar {
+    background: var(--bg-light);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 20px;
+  }
+  .sixty-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .stopwatch-icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+  }
+  .sixty-text {
+    font-size: 0.78rem;
+    color: var(--text-caption);
+    line-height: 1.45;
+  }
+  .sixty-text strong {
+    color: var(--text-primary);
+    font-weight: 700;
+  }
+
+  /* ═══════ ARTICLE ═══════ */
+  .article-container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 24px 20px 60px;
+  }
+
+  .section-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--cbs-red);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .section-label::before {
+    content: '';
+    width: 18px;
+    height: 2px;
+    background: var(--cbs-red);
+  }
+
+  h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(1.45rem, 4.5vw, 2.1rem);
+    font-weight: 800;
+    line-height: 1.18;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+    transition: color 0.2s ease;
+  }
+  a:hover h1 { color: var(--cbs-blue); }
+
+  .deck {
+    font-size: 0.95rem;
+    line-height: 1.48;
+    color: var(--text-caption);
+    margin-bottom: 16px;
+    font-weight: 400;
+  }
+
+  .byline-block {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 14px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid var(--border);
+  }
+  .byline-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--cbs-blue), var(--cbs-blue-deep));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .byline-info {
+    font-size: 0.82rem;
+    line-height: 1.5;
+  }
+  .byline-info .name {
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+  .byline-info .role {
+    color: var(--text-caption);
+  }
+  .byline-info .date {
+    color: var(--text-caption);
+  }
+  .share-icons {
+    margin-left: auto;
+    display: flex;
+    gap: 8px;
+  }
+  .share-btn {
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    background: none;
+  }
+  .share-btn:hover {
+    background: var(--bg-light);
+    border-color: #bbb;
+  }
+  .share-btn svg { width: 15px; height: 15px; fill: var(--text-caption); }
+
+  /* ═══════ VIDEO THUMBNAIL ═══════ */
+  .video-block {
+    display: block;
+    position: relative;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.1);
+    background: #000;
+  }
+  .video-block img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    filter: brightness(0.75);
+    transition: filter 0.35s ease;
+  }
+  .video-block:hover img { filter: brightness(0.6); }
+
+  .video-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .video-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: var(--cbs-red);
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 4px 10px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .video-badge .rec-dot {
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
+    animation: pulse-dot 1s ease-in-out infinite;
+  }
+  .play-circle {
+    width: 78px;
+    height: 78px;
+    border: 3px solid rgba(255,255,255,0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(4px);
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  .video-block:hover .play-circle {
+    transform: scale(1.08);
+    background: rgba(204,41,54,0.7);
+  }
+  .play-circle svg {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+    margin-left: 4px;
+  }
+  .video-title-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+    padding: 40px 20px 16px;
+  }
+  .video-title-bar p {
+    color: #fff;
+    font-size: 0.92rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  .video-title-bar .duration {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.72rem;
+    font-weight: 500;
+    margin-top: 4px;
+  }
+
+  .video-caption {
+    font-size: 0.72rem;
+    color: var(--text-caption);
+    margin-bottom: 16px;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--border);
+    font-style: italic;
+  }
+
+  /* ═══════ CTA ═══════ */
+  .cta-wrap {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--cta-green);
+    color: #fff;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 16px 36px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(26,143,74,0.3);
+    transition: all 0.25s ease;
+    animation: gentle-glow 2.8s ease-in-out infinite;
+  }
+  .cta-btn:hover {
+    background: var(--cta-green-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 22px rgba(26,143,74,0.4);
+    animation: none;
+  }
+  .cta-btn svg { width: 18px; height: 18px; fill: #fff; flex-shrink: 0; }
+  @keyframes gentle-glow {
+    0%, 100% { box-shadow: 0 4px 16px rgba(26,143,74,0.3); }
+    50% { box-shadow: 0 4px 28px rgba(26,143,74,0.5); }
+  }
+  .cta-note {
+    font-size: 0.76rem;
+    color: var(--text-caption);
+    margin-top: 10px;
+  }
+
+  /* ═══════ BODY TEXT ═══════ */
+  .body-text p {
+    font-size: 1.08rem;
+    line-height: 1.78;
+    margin-bottom: 22px;
+    color: var(--text-body);
+  }
+  .body-text strong { color: var(--text-primary); }
+
+  /* ═══════ PULL QUOTE ═══════ */
+  .pull-quote {
+    border-left: 4px solid var(--cbs-blue);
+    padding: 20px 24px;
+    margin: 32px 0;
+    background: var(--bg-light);
+    border-radius: 0 4px 4px 0;
+  }
+  .pull-quote p {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--text-primary);
+    font-weight: 700;
+    margin-bottom: 8px !important;
+  }
+  .pull-quote cite {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 0.8rem;
+    color: var(--text-caption);
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  /* ═══════ STAT BOX ═══════ */
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 30px 0;
+  }
+  .stat-cell {
+    background: var(--bg);
+    padding: 20px 14px;
+    text-align: center;
+  }
+  .stat-number {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--cbs-blue);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .stat-label {
+    font-size: 0.7rem;
+    color: var(--text-caption);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.35;
+    font-weight: 500;
+  }
+
+  /* ═══════ WARNING BOX ═══════ */
+  .warning-box {
+    background: #fef8f0;
+    border: 1px solid #f0d9b5;
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin: 10px 0 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.84rem;
+    color: #8a6914;
+    font-weight: 500;
+  }
+  .warning-box svg { width: 20px; height: 20px; fill: #c49520; flex-shrink: 0; }
+
+  /* ═══════ VIEWERS ═══════ */
+  .viewers-line {
+    text-align: center;
+    font-size: 0.78rem;
+    color: var(--text-caption);
+    margin-bottom: 14px;
+  }
+  .viewers-line strong { color: var(--text-primary); }
+
+  /* ═══════ FOOTER ═══════ */
+  .site-footer {
+    background: var(--cbs-blue-deep);
+    color: rgba(255,255,255,0.5);
+    padding: 28px 20px;
+    text-align: center;
+    font-size: 0.7rem;
+    line-height: 1.7;
+  }
+  .site-footer a { color: rgba(255,255,255,0.6); text-decoration: underline; }
+  .footer-inner { max-width: 760px; margin: 0 auto; }
+  .footer-logo {
+    font-weight: 700;
+    color: rgba(255,255,255,0.8);
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+
+  /* ═══════ RESPONSIVE ═══════ */
+  @media (max-width: 640px) {
+    .nav-links { display: none; }
+    .article-container { padding: 14px 16px 50px; }
+    .section-label { margin-bottom: 8px; font-size: 0.6rem; }
+    h1 { font-size: 1.35rem; margin-bottom: 10px; }
+    .deck { font-size: 0.85rem; line-height: 1.4; margin-bottom: 12px; }
+    .byline-block { padding-bottom: 10px; margin-bottom: 14px; }
+    .body-text p { font-size: 1.02rem; }
+    .cta-btn { width: 100%; justify-content: center; font-size: 0.95rem; padding: 15px 24px; }
+    .stat-number { font-size: 1.4rem; }
+    .stat-label { font-size: 0.62rem; }
+    .share-icons { display: none; }
+    .byline-avatar { width: 36px; height: 36px; font-size: 0.75rem; }
+    .play-circle { width: 64px; height: 64px; }
+    .play-circle svg { width: 24px; height: 24px; }
+    .pull-quote p { font-size: 1.05rem; }
+    .sixty-inner { gap: 10px; }
+    .stopwatch-icon { width: 30px; height: 30px; }
+    .sixty-bar { padding: 8px 16px; }
+    .sixty-text { font-size: 0.7rem; }
+    .breaking-strip { font-size: 0.66rem; padding: 5px 12px; }
+    .video-caption { margin-bottom: 10px; }
+    .viewers-line { margin-bottom: 8px; font-size: 0.72rem; }
+    .cta-wrap { margin: 14px 0; }
+    .video-title-bar { padding: 30px 12px 10px; }
+    .video-title-bar p { font-size: 0.72rem; line-height: 1.3; }
+    .video-title-bar .duration { font-size: 0.6rem; }
+    .video-badge { top: 8px; left: 8px; font-size: 0.58rem; padding: 3px 7px; }
+  }
+</style>
+<script type="text/javascript" src="https://lp.thrivecore.online/pretrack.js?rtkcmpid=6a2df44831d1d727c765f7ca"></script>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav class="nav-bar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <div class="cbs-eye">
+        <svg viewBox="0 0 80 80" fill="none">
+          <ellipse cx="40" cy="40" rx="38" ry="22" stroke="#fff" stroke-width="3" fill="none"/>
+          <circle cx="40" cy="40" r="13" fill="#fff"/>
+        </svg>
+      </div>
+      <div class="nav-brand">CBS News<span>60 Minutes Special</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="https://lp.thrivecore.online/preclick">US</a></li>
+      <li><a href="https://lp.thrivecore.online/preclick">Health</a></li>
+      <li><a href="https://lp.thrivecore.online/preclick">Science</a></li>
+      <li><a href="https://lp.thrivecore.online/preclick">Investigation</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ══ BREAKING ══ -->
+<div class="breaking-strip">
+  <span class="live-dot"></span>
+  Special Report — Content Under Active Review For Removal
+</div>
+
+<!-- ══ 60 MINUTES BAR ══ -->
+<div class="sixty-bar">
+  <div class="sixty-inner">
+    <svg class="stopwatch-icon" viewBox="0 0 64 64" fill="none">
+      <circle cx="32" cy="36" r="24" stroke="#1a3a5c" stroke-width="3.5" fill="none"/>
+      <line x1="32" y1="36" x2="32" y2="22" stroke="#cc2936" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="32" y1="36" x2="42" y2="36" stroke="#1a3a5c" stroke-width="2.5" stroke-linecap="round"/>
+      <rect x="28" y="8" width="8" height="6" rx="2" fill="#1a3a5c"/>
+      <line x1="32" y1="14" x2="32" y2="12" stroke="#1a3a5c" stroke-width="2.5"/>
+    </svg>
+    <div class="sixty-text">
+      <strong>60 Minutes Special Report</strong> — Originally broadcast segment. This extended cut contains material not included in the televised version.
+    </div>
+  </div>
+</div>
+
+<!-- ══ ARTICLE ══ -->
+<main class="article-container">
+
+  <div class="section-label">Health Investigation</div>
+
+  <a href="https://lp.thrivecore.online/preclick" style="text-decoration:none;color:inherit"><h1>Bill Gates-Funded Stanford Trial: "Alzheimer's Reversal Ritual" Restored Memory in 3,847 Patients — Broadcast Censored Within Hours</h1></a>
+
+  <p class="deck">A team of Stanford neuroscientists, quietly backed by the Bill & Melinda Gates Foundation, went on national television and revealed a two-ingredient kitchen ritual that reversed early-stage Alzheimer's symptoms in weeks — and exposed why the $13 billion dementia drug industry has been treating the wrong cause for decades.</p>
+
+  <div class="byline-block">
+    <div class="byline-avatar">SW</div>
+    <div class="byline-info">
+      <div class="name">Sarah Whitfield</div>
+      <div class="role">Senior Health Correspondent, CBS News</div>
+      <div class="date" id="pub-date"></div>
+    </div>
+    <div class="share-icons">
+      <button class="share-btn" aria-label="Share on Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></button>
+      <button class="share-btn" aria-label="Share on X"><svg viewBox="0 0 24 24"><path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-6.8-8.4L20 4h-2l-5.2 6.3L8 4H4z"/></svg></button>
+      <button class="share-btn" aria-label="Share by email"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6" fill="none" stroke="#6b6b6b" stroke-width="1.5"/></svg></button>
+    </div>
+  </div>
+
+  <!-- ══ VIDEO ══ -->
+  <a href="https://lp.thrivecore.online/preclick" class="video-block" id="video-link">
+    <img src="attia-thumbnail.png" alt="Honey jar and blueberries alongside fMRI brain scan — Stanford Alzheimer's research broadcast" />
+    <div class="video-overlay">
+      <div class="video-badge"><span class="rec-dot"></span> Special Report</div>
+      <div class="play-circle">
+        <svg viewBox="0 0 24 24"><polygon points="8,5 20,12 8,19"/></svg>
+      </div>
+      <div class="video-title-bar">
+        <p>WATCH: "Alzheimer's is not a death sentence for your brain" — the Gates-funded presentation Big Pharma tried to erase</p>
+        <span class="duration">Extended cut · Originally aired on 60 Minutes</span>
+      </div>
+    </div>
+  </a>
+  <p class="video-caption">Stanford neuroscientist during the live segment that pharmaceutical lobbyists pressured the network to remove from broadcast. CBS News / 60 Minutes</p>
+
+  <!-- ══ VIEWERS ══ -->
+  <p class="viewers-line"><strong id="viewer-count">217,843</strong> viewers streamed this report today</p>
+
+  <!-- ══ CTA 1 ══ -->
+  <div class="cta-wrap">
+    <a href="https://lp.thrivecore.online/preclick" class="cta-btn">
+      <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+      Watch the Full Presentation Now
+    </a>
+    <p class="cta-note">Free access — no sign-up required</p>
+  </div>
+
+  <!-- ══ BODY ══ -->
+  <div class="body-text">
+
+    <p>Forgetting your daughter's birthday. Calling your grandson by the wrong name. Standing in the kitchen holding a pot, with absolutely no memory of what you were about to cook. If this is starting to sound like your life — or the life of someone you love — what you're about to see could change everything. A 60 Minutes investigation has uncovered a Gates-funded Stanford discovery that the pharmaceutical industry is desperately trying to bury — and at the center is a team of neuroscientists who say they've been <strong>directly threatened by legal teams from Biogen, Eli Lilly, and Eisai</strong> after publishing clinical trial results that expose the real reason Alzheimer's has remained "incurable" for over 40 years.</p>
+
+    <p>The findings, published in <em>Nature Neuroscience</em> and validated in a rigorous double-blind trial with nearly 4,000 participants, revolve around what the research team calls the <strong>"Alzheimer's Reversal Ritual"</strong> — a deceptively simple daily protocol using two common ingredients found in any kitchen: <strong>raw honey and wild blueberries</strong>. According to the trial data, <strong>91% of early-stage Alzheimer's patients showed measurable cognitive reversal</strong> within the first 6 weeks, and nearly 8 in 10 were able to reduce or completely stop their prescription dementia medications under physician supervision.</p>
+
+  </div>
+
+  <!-- ══ STAT ROW ══ -->
+  <div class="stat-row">
+    <div class="stat-cell">
+      <div class="stat-number">3,847</div>
+      <div class="stat-label">Trial<br>Participants</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-number">91%</div>
+      <div class="stat-label">Reversed Alzheimer's<br>Symptoms</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-number">79%</div>
+      <div class="stat-label">Reduced or Stopped<br>Rx Medications</div>
+    </div>
+  </div>
+
+  <div class="body-text">
+
+    <p>What makes this presentation so dangerous to the pharmaceutical establishment isn't just the results — it's the funding behind them. <strong>Bill Gates personally directed over $100 million</strong> from the Gates Foundation into Alzheimer's research after watching his own father deteriorate from the disease. When the Stanford team showed him early data proving that a specific compound found in raw honey, combined with the anthocyanins in wild blueberries, could reverse the neuroinflammatory cascade that actually drives Alzheimer's — he doubled down. In the uncut broadcast, the lead researcher walks viewers through the exact ritual step by step — the specific type of honey, the preparation method, the timing — and explains why this two-ingredient protocol targets the true biological cause that the $13 billion dementia drug industry has been deliberately ignoring for decades.</p>
+
+  </div>
+
+  <!-- ══ PULL QUOTE ══ -->
+  <div class="pull-quote">
+    <p>"If you have 3 common ingredients in your kitchen right now, there is no scientific reason your loved one should be losing their mind to Alzheimer's. Give me 60 seconds to show you what they are."</p>
+    <cite>— Lead Stanford researcher, during the unscripted 60 Minutes segment</cite>
+  </div>
+
+  <!-- ══ WARNING ══ -->
+  <div class="warning-box">
+    <svg viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 3.5L19.5 19H4.5L12 5.5zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
+    <span>This page has been flagged twice for removal. Stream the full report while access remains available.</span>
+  </div>
+
+  <!-- ══ CTA 2 ══ -->
+  <div class="cta-wrap">
+    <a href="https://lp.thrivecore.online/preclick" class="cta-btn">
+      <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+      Watch Free — Full Uncut Report
+    </a>
+    <p class="cta-note">Join <strong id="viewer-count-2">217,843</strong> others who streamed this today</p>
+  </div>
+
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">CBS News</div>
+    <p>This page contains sponsored health content and does not represent the editorial views of CBS News or 60 Minutes. Individual results may vary. This content has not been reviewed by any medical institution. Always consult your physician before beginning any health protocol.</p>
+    <p style="margin-top:10px;"><a href="#">Privacy Policy</a> · <a href="#">Terms of Use</a> · <a href="#">Do Not Sell My Info</a> · <a href="#">Contact Us</a></p>
+    <p style="margin-top:8px;">© <span id="year"></span> CBS Broadcasting Inc. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // Dynamic date
+  const now = new Date();
+  const opts = { month: 'long', day: 'numeric', year: 'numeric' };
+  const dateStr = now.toLocaleDateString('en-US', opts);
+  document.getElementById('pub-date').textContent = `Updated ${dateStr}`;
+  document.getElementById('year').textContent = now.getFullYear();
+
+  // Synced viewer counter
+  let base = 217843;
+  function updateViewers() {
+    base += Math.floor(Math.random() * 4) + 1;
+    const formatted = base.toLocaleString();
+    document.getElementById('viewer-count').textContent = formatted;
+    document.getElementById('viewer-count-2').textContent = formatted;
+  }
+  setInterval(updateViewers, 3500);
+</script>
+
+</body>
+</html>
